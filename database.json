@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-15 16:02:15",
+  "last_updated": "2026-09-15 16:35:11",
   "dates": [
     "2026-07-08",
     "2026-07-09",
@@ -35,6 +35,27 @@
     "2026-08-08",
     "2026-08-09",
     "2026-08-10",
+    "2026-08-11",
+    "2026-08-12",
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-15",
+    "2026-08-16",
+    "2026-08-17",
+    "2026-08-18",
+    "2026-08-19",
+    "2026-08-20",
+    "2026-08-21",
+    "2026-08-22",
+    "2026-08-23",
+    "2026-08-24",
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-29",
+    "2026-08-30",
+    "2026-08-31",
     "2026-09-01",
     "2026-09-02",
     "2026-09-03",
@@ -59,10 +80,10 @@
   "data": {
     "2026-09-15": {
       "Shopify": {
-        "doanh_so": 2840.0,
-        "don_chot": 17,
-        "ads": 5545463.0,
-        "don_tao_moi": 15
+        "doanh_so": 3362.0,
+        "don_chot": 21,
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 581.0,
@@ -81,16 +102,16 @@
       "Shopify": {
         "doanh_so": 4975.1,
         "don_chot": 34,
-        "ads": 10708728.0,
-        "don_tao_moi": 32
+        "ads": 0.0,
+        "don_tao_moi": 0
       }
     },
     "2026-09-13": {
       "Shopify": {
         "doanh_so": 7351.55,
         "don_chot": 46,
-        "ads": 20247966.0,
-        "don_tao_moi": 33
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 274.0,
@@ -109,8 +130,8 @@
       "Shopify": {
         "doanh_so": 3576.55,
         "don_chot": 27,
-        "ads": 13450394.0,
-        "don_tao_moi": 23
+        "ads": 0.0,
+        "don_tao_moi": 0
       }
     },
     "2026-09-11": {
@@ -123,16 +144,16 @@
       "Shopify": {
         "doanh_so": 4596.0,
         "don_chot": 26,
-        "ads": 11841609.0,
-        "don_tao_moi": 22
+        "ads": 0.0,
+        "don_tao_moi": 0
       }
     },
     "2026-09-10": {
       "Shopify": {
         "doanh_so": 3674.0,
         "don_chot": 23,
-        "ads": 11456914.0,
-        "don_tao_moi": 14
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 199.0,
@@ -145,8 +166,8 @@
       "Shopify": {
         "doanh_so": 5629.0,
         "don_chot": 34,
-        "ads": 13502626.0,
-        "don_tao_moi": 27
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 323.0,
@@ -159,8 +180,8 @@
       "Shopify": {
         "doanh_so": 5343.3,
         "don_chot": 33,
-        "ads": 13599612.0,
-        "don_tao_moi": 27
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 1135.0,
@@ -173,8 +194,8 @@
       "Shopify": {
         "doanh_so": 5533.1,
         "don_chot": 34,
-        "ads": 13976092.0,
-        "don_tao_moi": 30
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 968.0,
@@ -187,8 +208,8 @@
       "Shopify": {
         "doanh_so": 7012.0,
         "don_chot": 41,
-        "ads": 20070489.0,
-        "don_tao_moi": 36
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 804.0,
@@ -201,8 +222,8 @@
       "Shopify": {
         "doanh_so": 6916.85,
         "don_chot": 37,
-        "ads": 13589115.0,
-        "don_tao_moi": 26
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 1232.0,
@@ -215,8 +236,8 @@
       "Shopify": {
         "doanh_so": 5658.1,
         "don_chot": 32,
-        "ads": 11933057.0,
-        "don_tao_moi": 34
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 264.0,
@@ -229,8 +250,8 @@
       "Shopify": {
         "doanh_so": 6509.15,
         "don_chot": 36,
-        "ads": 13488255.0,
-        "don_tao_moi": 28
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Chuyển Đổi Tệp Trung Quốc": {
         "doanh_so": 322.0,
@@ -249,8 +270,8 @@
       "Shopify": {
         "doanh_so": 3331.0,
         "don_chot": 21,
-        "ads": 12145659.0,
-        "don_tao_moi": 20
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 943.0,
@@ -269,8 +290,8 @@
       "Shopify": {
         "doanh_so": 6483.0,
         "don_chot": 40,
-        "ads": 14196180.0,
-        "don_tao_moi": 38
+        "ads": 0.0,
+        "don_tao_moi": 0
       },
       "Chuyển Đổi Tệp Trung Quốc": {
         "doanh_so": 370.0,
@@ -483,6 +504,12 @@
         "don_chot": 0,
         "ads": 1991776.0,
         "don_tao_moi": 4
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 9629762.0,
+        "don_tao_moi": 17
       }
     },
     "2026-08-02": {
@@ -491,6 +518,12 @@
         "don_chot": 0,
         "ads": 2738042.0,
         "don_tao_moi": 6
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 12515924.0,
+        "don_tao_moi": 27
       }
     },
     "2026-08-03": {
@@ -499,6 +532,12 @@
         "don_chot": 0,
         "ads": 2813300.0,
         "don_tao_moi": 3
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 8790124.0,
+        "don_tao_moi": 21
       }
     },
     "2026-08-04": {
@@ -507,6 +546,12 @@
         "don_chot": 0,
         "ads": 1822319.0,
         "don_tao_moi": 7
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 9129674.0,
+        "don_tao_moi": 24
       }
     },
     "2026-08-05": {
@@ -515,6 +560,12 @@
         "don_chot": 0,
         "ads": 2276503.0,
         "don_tao_moi": 5
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 10769097.0,
+        "don_tao_moi": 30
       }
     },
     "2026-08-06": {
@@ -523,6 +574,12 @@
         "don_chot": 0,
         "ads": 2611291.0,
         "don_tao_moi": 3
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 8782584.0,
+        "don_tao_moi": 20
       }
     },
     "2026-08-07": {
@@ -531,6 +588,12 @@
         "don_chot": 0,
         "ads": 2351006.0,
         "don_tao_moi": 9
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 9313236.0,
+        "don_tao_moi": 25
       }
     },
     "2026-08-08": {
@@ -539,6 +602,12 @@
         "don_chot": 0,
         "ads": 2162676.0,
         "don_tao_moi": 4
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 9220156.0,
+        "don_tao_moi": 25
       }
     },
     "2026-08-09": {
@@ -547,6 +616,12 @@
         "don_chot": 0,
         "ads": 3126847.0,
         "don_tao_moi": 7
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 10928045.0,
+        "don_tao_moi": 24
       }
     },
     "2026-08-10": {
@@ -555,11 +630,185 @@
         "don_chot": 0,
         "ads": 1748102.0,
         "don_tao_moi": 3
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 8492168.0,
+        "don_tao_moi": 21
+      }
+    },
+    "2026-08-31": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 16346480.0,
+        "don_tao_moi": 45
+      }
+    },
+    "2026-08-30": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 15287588.0,
+        "don_tao_moi": 49
+      }
+    },
+    "2026-08-29": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 12011221.0,
+        "don_tao_moi": 34
+      }
+    },
+    "2026-08-28": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 12525258.0,
+        "don_tao_moi": 20
+      }
+    },
+    "2026-08-27": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 10711524.0,
+        "don_tao_moi": 33
+      }
+    },
+    "2026-08-26": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 10401603.0,
+        "don_tao_moi": 26
+      }
+    },
+    "2026-08-25": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 14431753.0,
+        "don_tao_moi": 43
+      }
+    },
+    "2026-08-24": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 11942940.0,
+        "don_tao_moi": 17
+      }
+    },
+    "2026-08-23": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 14417661.0,
+        "don_tao_moi": 25
+      }
+    },
+    "2026-08-22": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 9633465.0,
+        "don_tao_moi": 23
+      }
+    },
+    "2026-08-21": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 9436324.0,
+        "don_tao_moi": 22
+      }
+    },
+    "2026-08-20": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 11202465.0,
+        "don_tao_moi": 21
+      }
+    },
+    "2026-08-19": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 11041983.0,
+        "don_tao_moi": 23
+      }
+    },
+    "2026-08-18": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 12000257.0,
+        "don_tao_moi": 31
+      }
+    },
+    "2026-08-17": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 9637841.0,
+        "don_tao_moi": 27
+      }
+    },
+    "2026-08-16": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 11257288.0,
+        "don_tao_moi": 36
+      }
+    },
+    "2026-08-15": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 7971621.0,
+        "don_tao_moi": 20
+      }
+    },
+    "2026-08-14": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 8209415.0,
+        "don_tao_moi": 26
+      }
+    },
+    "2026-08-13": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 8865255.0,
+        "don_tao_moi": 24
+      }
+    },
+    "2026-08-12": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 8960852.0,
+        "don_tao_moi": 30
+      }
+    },
+    "2026-08-11": {
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 8798496.0,
+        "don_tao_moi": 16
       }
     }
   },
   "stats": {
-    "excluded_google_shopify": 25,
+    "excluded_google_shopify": 26,
     "unmapped_marketers": []
   }
 }
