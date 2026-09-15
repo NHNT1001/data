@@ -1,6 +1,15 @@
 param (
-    [string]$TargetFolder = $PSScriptRoot
+    [string]$TargetFolder = ""
 )
+
+# Tu dong xac dinh thu muc: Uu tien D:\data neu ton tai, neu khong lay thu muc chua file script
+if ([string]::IsNullOrWhiteSpace($TargetFolder)) {
+    if (Test-Path "D:\data") {
+        $TargetFolder = "D:\data"
+    } else {
+        $TargetFolder = $PSScriptRoot
+    }
+}
 
 if ([string]::IsNullOrWhiteSpace($TargetFolder)) {
     $TargetFolder = (Get-Location).Path
@@ -8,20 +17,27 @@ if ([string]::IsNullOrWhiteSpace($TargetFolder)) {
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-Write-Host "========================================================" -ForegroundColor Cyan
-Write-Host ">>> DANG THEO DOI THU MUC DU LIEU:" -ForegroundColor Yellow
-Write-Host "    $TargetFolder" -ForegroundColor Green
-Write-Host ">>> Khi co file Excel thay doi, script se tu dong push." -ForegroundColor Gray
-Write-Host "    (Nhan Ctrl + C de dung)" -ForegroundColor DarkGray
-Write-Host "========================================================" -ForegroundColor Cyan
+$logFile = Join-Path $TargetFolder "auto_push.log"
+
+function Write-Log([string]$msg, [string]$color = "White") {
+    $timestamp = (Get-Date).ToString("dd/MM/yyyy HH:mm:ss")
+    $logMsg = "[$timestamp] $msg"
+    try {
+        Write-Host $logMsg -ForegroundColor $color
+    } catch {}
+    try {
+        Add-Content -Path $logFile -Value $logMsg -Encoding UTF8 -ErrorAction SilentlyContinue
+    } catch {}
+}
+
+Write-Log "========================================================" "Cyan"
+Write-Log ">>> BAT DAU THEO DOI THU MUC: $TargetFolder" "Yellow"
 
 Set-Location -Path $TargetFolder
 $gitCheck = git status 2>&1
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "[X] Loi: Thu muc nay chua duoc ket noi Git!" -ForegroundColor Red
-    Write-Host $gitCheck -ForegroundColor Red
-    Read-Host "Nhan Enter de thoat..."
-    exit
+    Write-Log "[X] Loi Git: $gitCheck" "Red"
+    exit 1
 }
 
 $watcher = New-Object System.IO.FileSystemWatcher
@@ -38,14 +54,14 @@ $action = {
     $fileName = [System.IO.Path]::GetFileName($path)
     $extension = [System.IO.Path]::GetExtension($path).ToLower()
 
-    if ($path.Contains("\.git\") -or $fileName.StartsWith("~$")) {
+    if ($path.Contains("\.git\") -or $fileName.StartsWith("~$") -or $fileName -eq "auto_push.log") {
         return
     }
 
     if ($filterExtensions -contains $extension) {
         $timestamp = (Get-Date).ToString("HH:mm:ss")
-        Write-Host "[$timestamp] Phat hien thay doi: $fileName ($changeType)" -ForegroundColor Magenta
         $global:hasChanges = $true
+        $global:lastChangedFile = $fileName
         $global:lastChangeTime = [DateTime]::Now
     }
 }
@@ -56,8 +72,11 @@ Register-ObjectEvent $watcher 'Deleted' -Action $action | Out-Null
 Register-ObjectEvent $watcher 'Renamed' -Action $action | Out-Null
 
 $global:hasChanges = $false
+$global:lastChangedFile = ""
 $global:lastChangeTime = [DateTime]::MinValue
 $debounceSeconds = 3
+
+Write-Log ">>> He thong san sang! Dang cho thay doi file Excel..." "Green"
 
 try {
     while ($true) {
@@ -67,33 +86,33 @@ try {
             $elapsed = ([DateTime]::Now - $global:lastChangeTime).TotalSeconds
             if ($elapsed -ge $debounceSeconds) {
                 $global:hasChanges = $false
-                $timeStr = (Get-Date).ToString("dd/MM/yyyy HH:mm:ss")
-                $curTime = (Get-Date).ToString("HH:mm:ss")
-                Write-Host "[$curTime] Dang kiem tra thay doi..." -ForegroundColor Yellow
+                $changedFile = $global:lastChangedFile
+                Write-Log "Phat hien file thay doi: $changedFile" "Magenta"
+                Write-Log "Dang kiem tra git status..." "Yellow"
                 
                 $status = git status --porcelain
                 if ([string]::IsNullOrWhiteSpace($status)) {
-                    Write-Host "[$curTime] Khong co thay doi nao can commit." -ForegroundColor Gray
+                    Write-Log "Khong co thay doi thuc su nao can commit." "Gray"
                     continue
                 }
 
-                Write-Host "[$curTime] Dang tu dong day (Push) du lieu len GitHub..." -ForegroundColor Cyan
+                $timeStr = (Get-Date).ToString("dd/MM/yyyy HH:mm:ss")
+                Write-Log "Dang tu dong Push len GitHub..." "Cyan"
                 git add .
                 git commit -m "Auto sync data: $timeStr"
                 
                 $pushOutput = git push origin main 2>&1
                 if ($LASTEXITCODE -eq 0) {
-                    Write-Host "[$curTime] [OK] DA DONG BO THANH CONG LEN GITHUB!" -ForegroundColor Green
+                    Write-Log "[OK] DA DONG BO THANH CONG LEN GITHUB (main)!" "Green"
                 } else {
                     $pushMaster = git push origin master 2>&1
                     if ($LASTEXITCODE -eq 0) {
-                        Write-Host "[$curTime] [OK] DA DONG BO THANH CONG (nhanh master)!" -ForegroundColor Green
+                        Write-Log "[OK] DA DONG BO THANH CONG LEN GITHUB (master)!" "Green"
                     } else {
-                        Write-Host "[$curTime] [X] Loi khi Push:" -ForegroundColor Red
-                        Write-Host $pushOutput -ForegroundColor Red
+                        Write-Log "[X] Loi khi Push: $pushOutput" "Red"
                     }
                 }
-                Write-Host "--------------------------------------------------------" -ForegroundColor DarkGray
+                Write-Log "--------------------------------------------------------" "DarkGray"
             }
         }
     }
@@ -102,6 +121,5 @@ finally {
     $watcher.EnableRaisingEvents = $false
     $watcher.Dispose()
     Get-EventSubscriber | Unregister-Event
-    Write-Host ""
-    Write-Host "Da dung theo doi." -ForegroundColor Yellow
+    Write-Log "Da dung theo doi." "Yellow"
 }
