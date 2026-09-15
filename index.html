@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Báo cáo Doanh số &amp; Ads theo Nền tảng</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  :root{
+    --navy:#1e3a8a; --navy-dark:#152a63; --yellow-strong:#ffe066;
+    --border:#d8dee9; --text:#1f2937; --muted:#6b7280; --bg:#f5f7fb;
+    --accent:#2563eb; --green:#0f8a5f; --red:#c0392b;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; font-family:"Segoe UI",Arial,Helvetica,sans-serif; background:var(--bg); color:var(--text); padding:24px; }
+  h1{ font-size:20px; margin:0 0 4px 0; color:var(--navy-dark); }
+  .subtitle{ color:var(--muted); font-size:13px; margin-bottom:18px; }
+  .panel{ background:#fff; border:1px solid var(--border); border-radius:10px; padding:16px 18px; margin-bottom:18px; box-shadow:0 1px 2px rgba(0,0,0,0.03); }
+  .panel-title{ font-weight:700; font-size:13px; color:var(--navy-dark); margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; }
+  .panel-title .actions{ font-weight:400; font-size:12px; }
+  .panel-title .actions button{ background:none; border:none; color:var(--accent); cursor:pointer; font-size:12px; text-decoration:underline; padding:0 6px; }
+  .id-chip{ display:flex; align-items:center; gap:6px; border:1px solid var(--border); border-radius:8px; padding:6px 10px; font-size:12.5px; cursor:pointer; background:#fafbfd; user-select:none; transition:background .12s, border-color .12s; }
+  .id-chip:hover{ background:#eef2ff; }
+  .id-chip.checked{ background:#e8f0ff; border-color:var(--accent); }
+  .id-chip input{ pointer-events:none; margin:0; }
+  .id-chip .cnt{ color:var(--muted); font-size:11px; }
+  #platformGrid{ display:flex; flex-wrap:wrap; gap:8px; }
+  table{ border-collapse:collapse; width:100%; font-size:12.5px; background:#fff; }
+  thead th{ background:var(--navy); color:#fff; padding:10px 8px; text-align:center; font-weight:700; position:sticky; top:0; border:1px solid var(--navy-dark); }
+  tbody td{ padding:8px 8px; text-align:center; border:1px solid var(--border); white-space:nowrap; }
+  tbody tr:nth-child(even){ background:#fafbfd; }
+  tr.total-row td{ background:var(--yellow-strong); font-weight:700; }
+  tr.zero-row td{ color:#b6bcc7; }
+  .scroll-wrap{ max-height:640px; overflow:auto; border:1px solid var(--border); border-radius:8px; }
+  .empty-msg{ padding:24px; text-align:center; color:var(--muted); font-size:13px; }
+  .col-date{ text-align:left !important; font-weight:600; }
+  .placeholder-msg{ padding:40px; text-align:center; color:var(--muted); font-size:13.5px; }
+  footer{ margin-top:14px; font-size:11.5px; color:var(--muted); line-height:1.6; }
+  .badge{ display:inline-block; font-size:11px; padding:2px 8px; border-radius:20px; background:#eef2ff; color:var(--accent); margin-left:6px; }
+  .filter-btn{ background:rgba(255,255,255,0.2); border:none; color:#fff; cursor:pointer; font-size:12px; border-radius:4px; padding:1px 6px; margin-left:6px; vertical-align:middle; }
+  .filter-btn:hover{ background:rgba(255,255,255,0.35); }
+  .filter-dropdown{ position:absolute; top:100%; left:0; margin-top:4px; background:#fff; color:var(--text); border:1px solid var(--border); border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,0.15); width:260px; padding:10px; z-index:50; font-weight:400; text-align:left; font-size:12.5px; }
+  .filter-dropdown input[type=text]{ width:100%; padding:6px 8px; border:1px solid var(--border); border-radius:6px; font-size:12.5px; margin-bottom:8px; box-sizing:border-box; }
+  .dd-actions{ display:flex; gap:10px; margin-bottom:8px; }
+  .dd-actions button{ background:none; border:none; color:var(--accent); cursor:pointer; font-size:12px; text-decoration:underline; padding:0; }
+  .dd-range{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:8px; padding-bottom:8px; border-bottom:1px solid var(--border); font-size:11.5px; }
+  .dd-range label{ display:flex; align-items:center; gap:4px; }
+  .dd-range input[type=date]{ padding:3px 4px; border:1px solid var(--border); border-radius:5px; font-size:11px; }
+  .dd-range button{ background:var(--accent); color:#fff; border:none; border-radius:5px; padding:4px 8px; font-size:11px; cursor:pointer; }
+  .dd-list{ max-height:220px; overflow-y:auto; border:1px solid var(--border); border-radius:6px; padding:4px; }
+  .dd-list label{ display:flex; align-items:center; gap:6px; padding:4px 6px; border-radius:4px; cursor:pointer; font-size:12px; }
+  .dd-list label:hover{ background:#f2f4f8; }
+  .dd-footer{ margin-top:8px; text-align:right; }
+  .dd-footer button{ background:var(--navy); color:#fff; border:none; border-radius:6px; padding:5px 12px; font-size:12px; cursor:pointer; }
+  .top-bar{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:6px; }
+  .refresh-btn{ background:var(--navy); color:#fff; border:none; border-radius:6px; padding:8px 16px; font-size:12.5px; cursor:pointer; }
+  .refresh-btn:hover{ background:var(--navy-dark); }
+  .status-pill{ font-size:11.5px; color:var(--muted); }
+  .status-pill.err{ color:var(--red); font-weight:600; }
+  .loading-msg{ padding:40px; text-align:center; color:var(--muted); font-size:13.5px; }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div>
+    <h1>Báo cáo Doanh số &amp; Ads theo Nền tảng</h1>
+    <div class="subtitle">Dữ liệu tự động cập nhật từ nguồn — không cần làm gì thêm để xem số liệu mới nhất.</div>
+  </div>
+  <div style="text-align:right;">
+    <button class="refresh-btn" onclick="loadAllData()">🔄 Làm mới dữ liệu</button>
+    <div class="status-pill" id="lastUpdated"></div>
+    <div style="margin-top:6px; font-size:11.5px; color:var(--muted);">
+      Hệ số quy đổi (RM→VNĐ):
+      <input type="number" id="unitPriceInput" value="6359" step="1"
+        style="width:80px; padding:3px 6px; border:1px solid var(--border); border-radius:5px; font-size:11.5px;">
+    </div>
+  </div>
+</div>
+
+<div id="loadingPlaceholder" class="panel">
+  <div class="loading-msg" id="loadingMsg">Đang tải dữ liệu...</div>
+</div>
+
+<div class="panel" id="filterPanel" style="display:none;">
+  <div class="panel-title">
+    Lọc theo Nền tảng (chọn 1 hoặc nhiều) <span class="badge" id="platformCountBadge"></span>
+    <span class="actions">
+      <button onclick="selectAllPlatforms()">Chọn tất cả</button>|
+      <button onclick="clearAllPlatforms()">Bỏ chọn</button>
+    </span>
+  </div>
+  <div id="platformGrid"></div>
+</div>
+
+<div class="panel" id="tablePanel" style="display:none;">
+  <div class="scroll-wrap">
+    <table id="reportTable">
+      <thead>
+        <tr>
+          <th style="text-align:left; position:relative;">
+            <span>NGÀY</span>
+            <button id="dateFilterBtn" class="filter-btn" onclick="toggleDateDropdown(event)" title="Lọc theo ngày">▾</button>
+            <div id="dateDropdown" class="filter-dropdown" style="display:none;">
+              <input type="text" id="dateSearchBox" placeholder="Tìm ngày (vd 07, 15-07)..." oninput="buildDateList(this.value)">
+              <div class="dd-actions">
+                <button onclick="selectAllDates()">Chọn tất cả</button>
+                <button onclick="clearAllDates()">Bỏ chọn</button>
+              </div>
+              <div class="dd-range">
+                <label>Từ <input type="date" id="dateFrom"></label>
+                <label>Đến <input type="date" id="dateTo"></label>
+                <button onclick="applyDateRange()">Áp dụng</button>
+              </div>
+              <div id="dateList" class="dd-list"></div>
+              <div class="dd-footer"><button onclick="closeDateDropdown()">Đóng</button></div>
+            </div>
+          </th>
+          <th>DOANH SỐ (RM)</th>
+          <th>DOANH SỐ (VNĐ)</th>
+          <th>ADS (VNĐ)</th>
+          <th>%ADS/DS</th>
+          <th>CPA</th>
+          <th>ĐƠN TẠO MỚI</th>
+          <th>ĐƠN CHỐT</th>
+          <th>TỶ LỆ CHỐT</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Phân loại nền tảng: dựa vào cột Marketer trong file Đơn hàng, và theo file Ads tương ứng của từng nền tảng.<br>
+  Công thức: DOANH SỐ (VNĐ) = DOANH SỐ (RM) × hệ số quy đổi (6.359) &nbsp;|&nbsp; %ADS/DS = ADS ÷ Doanh số (VNĐ) &nbsp;|&nbsp;
+  CPA = ADS ÷ Đơn tạo mới &nbsp;|&nbsp; Tỷ lệ chốt = Đơn chốt ÷ Đơn tạo mới.
+</footer>
+
+<script>
+/* ================== CẤU HÌNH NGUỒN DỮ LIỆU ==================
+   NGƯỜI QUẢN TRỊ: thay 4 link bên dưới bằng link "raw" của 4 file Excel
+   (khuyến nghị host trên 1 GitHub repo Public — vào file trên GitHub > nút "Raw" > copy link,
+   dạng https://raw.githubusercontent.com/<user>/<repo>/<branch>/<tên-file>.xlsx).
+   Mỗi khi có dữ liệu mới, chỉ cần upload đè đúng tên file đó lên cùng vị trí trên GitHub,
+   KHÔNG cần đổi link ở đây — trang này sẽ tự lấy bản mới nhất mỗi khi tải lại / bấm Làm mới.
+================================================================= */
+const FILE_URL_DATABASE   = 'https://raw.githubusercontent.com/NHNT1001/data/main/database.json';
+const FILE_URL_ORDERS      = 'https://raw.githubusercontent.com/NHNT1001/data/main/orders.xlsx';
+const FILE_URL_ADS_CDTQ    = 'https://raw.githubusercontent.com/NHNT1001/data/main/DATA-C%C4%90-T%E1%BB%87p-Trung-805265852439209.xlsx';
+const FILE_URL_ADS_MESSWS  = 'https://raw.githubusercontent.com/NHNT1001/data/main/DATA-Mess-WS-t%E1%BB%87p-trung-1917455875136727.xlsx';
+const FILE_URL_ADS_SHOPIFY = 'https://raw.githubusercontent.com/NHNT1001/data/main/DATA-SHOPIFY-907645362729233.xlsx';
+let UNIT_PRICE = 6359; // hệ số quy đổi DOANH SỐ (RM) -> VNĐ (chỉnh được qua ô nhập #unitPriceInput, tự lưu lại lần chỉnh gần nhất)
+const AUTO_REFRESH_MS = 60000; // tự làm mới mỗi 60 giây
+/* ============================================================== */
+
+// ---- Platform constants ----
+const PLATFORM_CDTQ    = 'Chuyển Đổi Tệp Trung Quốc';
+const PLATFORM_MESSWS  = 'Mess/WS Tệp Trung Quốc';
+const PLATFORM_SHOPIFY = 'Shopify';
+const PLATFORM_UNKNOWN = 'Chưa phân loại';
+const PLATFORM_KEY_MAP = { CDTQ: PLATFORM_CDTQ, MESSWS: PLATFORM_MESSWS, SHOPIFY: PLATFORM_SHOPIFY };
+const PLATFORM_ORDER = [PLATFORM_CDTQ, PLATFORM_MESSWS, PLATFORM_SHOPIFY, PLATFORM_UNKNOWN];
+
+function classifyPlatformFromMarketer(marketer){
+  const s = String(marketer||'').trim().toLowerCase();
+  if(!s) return PLATFORM_UNKNOWN;
+  if(s.includes('shopify')) return PLATFORM_SHOPIFY;
+  if(s.includes('cđ tệp trung') || s.includes('cd tep trung') || s.includes('chuyển đổi') || s.includes('chuyen doi')) return PLATFORM_CDTQ;
+  if(s.includes('mess') || s.includes('ws tệp trung') || s.includes('ws tep trung')) return PLATFORM_MESSWS;
+  return PLATFORM_UNKNOWN + ': ' + marketer;
+}
+function platformSortKey(p){ const i = PLATFORM_ORDER.indexOf(p); return i === -1 ? 999 : i; }
+
+const VALID_RESULT_TYPE = {
+  [PLATFORM_SHOPIFY]: 'lượt mua trên web',
+  [PLATFORM_CDTQ]: 'lượt đăng ký hoàn tất trên trang web',
+  [PLATFORM_MESSWS]: 'lượt bắt đầu cuộc trò chuyện qua tin nhắn'
+};
+
+function parseNum(v){
+  if(v===null || v===undefined || v==='') return 0;
+  if(typeof v === 'number') return v;
+  let s = String(v).trim();
+  if(/^-?\d{1,3}(\.\d{3})*(,\d+)?$/.test(s)){ s = s.replace(/\./g, '').replace(',', '.'); }
+  else if(/^-?\d+,\d+$/.test(s)){ s = s.replace(',', '.'); }
+  const n = parseFloat(s);
+  return isNaN(n) ? 0 : n;
+}
+
+function normDate(v){
+  if(v instanceof Date){
+    const y = v.getFullYear(), m = String(v.getMonth()+1).padStart(2,'0'), d = String(v.getDate()).padStart(2,'0');
+    return `${y}-${m}-${d}`;
+  }
+  const s = String(v).trim();
+  if(/^\d{4}-\d{2}-\d{2}/.test(s)) return s.slice(0,10);
+  const m1 = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if(m1){ const [,d,mo,y] = m1; return `${y}-${mo.padStart(2,'0')}-${d.padStart(2,'0')}`; }
+  return s;
+}
+
+function findCol(headerRow, candidates){
+  const lowerCands = candidates.map(c=>c.toLowerCase());
+  for(let i=0;i<headerRow.length;i++){
+    const h = String(headerRow[i]||'').trim().toLowerCase();
+    if(lowerCands.includes(h)) return i;
+  }
+  let best = -1, bestLen = Infinity;
+  for(let i=0;i<headerRow.length;i++){
+    const h = String(headerRow[i]||'').trim().toLowerCase();
+    for(const c of lowerCands){
+      if(h.includes(c) && h.length < bestLen){ best = i; bestLen = h.length; }
+    }
+  }
+  return best;
+}
+
+function parseOrdersRows(rows){
+  if(!rows || rows.length < 2) return {error:'Không có dữ liệu.'};
+  const header = rows[0];
+  const iDate = findCol(header, ['ngày tạo đơn','ngày','date']);
+  const iMarketer = findCol(header, ['marketer']);
+  const iAmount = findCol(header, ['tổng tiền đơn hàng','tổng tiền']);
+  const iSource = findCol(header, ['utm source']);
+  if(iDate===-1 || iAmount===-1) return {error:'Thiếu cột bắt buộc (Ngày tạo đơn / Tổng tiền đơn hàng).'};
+  const out = [];
+  const unmappedMarketers = new Set();
+  let excludedGoogleShopify = 0;
+  for(let r=1;r<rows.length;r++){
+    const row = rows[r];
+    if(!row || row.every(v=>v===null || v==='')) continue;
+    const dateRaw = row[iDate];
+    if(dateRaw===null || dateRaw===undefined) continue;
+    const amount = parseNum(row[iAmount]);
+    const marketer = iMarketer!==-1 ? row[iMarketer] : null;
+    const platform = classifyPlatformFromMarketer(marketer);
+    if(platform.startsWith(PLATFORM_UNKNOWN) && marketer) unmappedMarketers.add(String(marketer));
+    if(platform === PLATFORM_SHOPIFY && iSource!==-1){
+      const src = row[iSource];
+      const srcVal = src!==null && src!==undefined ? String(src).trim().toLowerCase() : '';
+      if(srcVal === 'google'){ excludedGoogleShopify++; continue; }
+    }
+    out.push({date: normDate(dateRaw), platform, amount});
+  }
+  return {rows: out, unmappedMarketers:[...unmappedMarketers], excludedGoogleShopify};
+}
+
+function parseAdsRows(rows, platformLabel){
+  if(!rows || rows.length < 2) return {error:'Không có dữ liệu.'};
+  const header = rows[0];
+  const iDate = findCol(header, ['ngày']);
+  const iSpend = findCol(header, ['số tiền đã chi tiêu','so tien da chi tieu']);
+  const iResult = findCol(header, ['kết quả','ket qua']);
+  const iResultType = findCol(header, ['loại kết quả','loai ket qua']);
+  if(iDate===-1 || iSpend===-1) return {error:'Thiếu cột bắt buộc (Ngày / Số tiền đã chi tiêu).'};
+  const expectedType = VALID_RESULT_TYPE[platformLabel] || null;
+  const out = [];
+  for(let r=1;r<rows.length;r++){
+    const row = rows[r];
+    if(!row || row.every(v=>v===null || v==='')) continue;
+    const dateRaw = row[iDate];
+    if(dateRaw===null || dateRaw===undefined) continue;
+    const spend = parseNum(row[iSpend]);
+    let ketqua = 0;
+    if(iResult!==-1){
+      const rawKetqua = parseNum(row[iResult]);
+      if(rawKetqua > 0){
+        const typeVal = iResultType!==-1 ? String(row[iResultType]||'').trim().toLowerCase() : '';
+        if(!expectedType || typeVal === expectedType) ketqua = rawKetqua;
+      }
+    }
+    out.push({date: normDate(dateRaw), platform: platformLabel, spend, ketqua});
+  }
+  return {rows: out};
+}
+
+async function fetchWorkbookRows(url){
+  // GitHub raw content được cache qua CDN (~5 phút) — thêm tham số ngẫu nhiên để luôn lấy bản mới nhất
+  const bustedUrl = url + (url.includes('?') ? '&' : '?') + 'cb=' + Date.now();
+  const res = await fetch(bustedUrl, {cache:'no-store'});
+  if(!res.ok) throw new Error('HTTP '+res.status);
+  const buf = await res.arrayBuffer();
+  const wb = XLSX.read(buf, {type:'array', cellDates:true});
+  const sheet = wb.Sheets[wb.SheetNames[0]];
+  return XLSX.utils.sheet_to_json(sheet, {header:1, raw:true, defval:null});
+}
+
+// ---- State ----
+let ordersRows = null;
+let adsRowsByPlatform = { CDTQ: null, MESSWS: null, SHOPIFY: null };
+let merged = null;
+let selected = new Set();
+let selectedDates = new Set();
+
+async function loadAllData(){
+  const loadingEl = document.getElementById('loadingPlaceholder');
+  const loadingMsg = document.getElementById('loadingMsg');
+  const statusEl = document.getElementById('lastUpdated');
+  loadingEl.style.display = 'block';
+  loadingMsg.textContent = 'Đang tải dữ liệu...';
+  statusEl.className = 'status-pill';
+  statusEl.textContent = '';
+
+  // 1. Ưu tiên nạp từ database.json tích luỹ (Tốc độ cao, lưu giữ vĩnh viễn dữ liệu các tháng trước)
+  try{
+    const dbBusted = FILE_URL_DATABASE + (FILE_URL_DATABASE.includes('?') ? '&' : '?') + 'cb=' + Date.now();
+    const dbRes = await fetch(dbBusted, {cache:'no-store'});
+    if(dbRes.ok){
+      const db = await dbRes.json();
+      if(db && db.data && db.dates && db.dates.length > 0){
+        applyDatabase(db);
+        loadingEl.style.display = 'none';
+        const excMsg = db.stats && db.stats.excluded_google_shopify ? ` (loại ${db.stats.excluded_google_shopify} đơn Google)` : '';
+        statusEl.textContent = 'Đồng bộ từ Database lúc ' + new Date().toLocaleTimeString('vi-VN') + ` [${db.dates.length} ngày lưu trữ]${excMsg}`;
+        return;
+      }
+    }
+  }catch(e){
+    console.warn('Chưa có database.json hoặc lỗi kết nối, chuyển sang đọc trực tiếp file Excel:', e);
+  }
+
+  // 2. Dự phòng: Đọc trực tiếp 4 file Excel nếu chưa có database.json
+  try{
+    const [ordersData, ...adsResults] = await Promise.all([
+      fetchWorkbookRows(FILE_URL_ORDERS).catch(e=>({__error: 'Đơn hàng: '+e.message})),
+      fetchWorkbookRows(FILE_URL_ADS_CDTQ).catch(e=>({__error: 'Ads CĐ Tệp Trung: '+e.message})),
+      fetchWorkbookRows(FILE_URL_ADS_MESSWS).catch(e=>({__error: 'Ads Mess/WS: '+e.message})),
+      fetchWorkbookRows(FILE_URL_ADS_SHOPIFY).catch(e=>({__error: 'Ads Shopify: '+e.message}))
+    ]);
+
+    const errors = [];
+
+    if(ordersData.__error){ errors.push(ordersData.__error); ordersRows = null; }
+    else {
+      const res = parseOrdersRows(ordersData);
+      if(res.error){ errors.push('Đơn hàng: '+res.error); ordersRows = null; }
+      else ordersRows = res.rows;
+    }
+
+    const platKeys = ['CDTQ','MESSWS','SHOPIFY'];
+    adsResults.forEach((data, i)=>{
+      const key = platKeys[i];
+      if(data.__error){ errors.push(data.__error); adsRowsByPlatform[key] = null; return; }
+      const res = parseAdsRows(data, PLATFORM_KEY_MAP[key]);
+      if(res.error){ errors.push(`Ads ${PLATFORM_KEY_MAP[key]}: `+res.error); adsRowsByPlatform[key] = null; }
+      else adsRowsByPlatform[key] = res.rows;
+    });
+
+    if(!ordersRows){
+      loadingMsg.innerHTML = 'Không tải được dữ liệu Đơn hàng.<br>' + errors.map(e=>'⚠️ '+e).join('<br>');
+      document.getElementById('filterPanel').style.display = 'none';
+      document.getElementById('tablePanel').style.display = 'none';
+      return;
+    }
+
+    loadingEl.style.display = 'none';
+    tryMerge();
+    statusEl.textContent = 'Cập nhật lúc ' + new Date().toLocaleTimeString('vi-VN') + (errors.length ? ' — có lỗi ở một số nguồn (xem bên dưới)' : '');
+    if(errors.length){ statusEl.className = 'status-pill err'; statusEl.title = errors.join(' | '); }
+  } catch(err){
+    loadingMsg.textContent = 'Lỗi tải dữ liệu: ' + err.message;
+  }
+}
+
+function applyDatabase(db){
+  const prevSelected = selected;
+  const prevSelectedDates = selectedDates;
+  merged = { dates: db.dates, platforms: db.platforms, data: db.data };
+  selected = new Set([...prevSelected].filter(p=>merged.platforms.includes(p)));
+  selectedDates = new Set([...prevSelectedDates].filter(d=>merged.dates.includes(d)));
+
+  document.getElementById('filterPanel').style.display = 'block';
+  document.getElementById('tablePanel').style.display = 'block';
+  buildPlatformGrid();
+  buildDateList('');
+  render();
+}
+
+function tryMerge(){
+  if(!ordersRows) return;
+  const data = {};
+  const dateSet = new Set();
+  const platformSet = new Set();
+
+  function ensure(date, platform){
+    if(!data[date]) data[date] = {};
+    if(!data[date][platform]) data[date][platform] = {doanh_so:0, don_chot:0, ads:0, don_tao_moi:0};
+    return data[date][platform];
+  }
+
+  ordersRows.forEach(o=>{
+    const d = ensure(o.date, o.platform);
+    d.doanh_so += o.amount; d.don_chot += 1;
+    dateSet.add(o.date); platformSet.add(o.platform);
+  });
+  Object.values(adsRowsByPlatform).forEach(rowsForPlatform=>{
+    if(!rowsForPlatform) return;
+    rowsForPlatform.forEach(a=>{
+      const d = ensure(a.date, a.platform);
+      d.ads += a.spend; d.don_tao_moi += a.ketqua;
+      dateSet.add(a.date); platformSet.add(a.platform);
+    });
+  });
+
+  const prevSelected = selected;
+  const prevSelectedDates = selectedDates;
+  merged = { dates: [...dateSet].sort(), platforms: [...platformSet].sort((a,b)=>platformSortKey(a)-platformSortKey(b)), data };
+  // giữ lựa chọn lọc cũ nếu còn hợp lệ sau khi làm mới dữ liệu
+  selected = new Set([...prevSelected].filter(p=>merged.platforms.includes(p)));
+  selectedDates = new Set([...prevSelectedDates].filter(d=>merged.dates.includes(d)));
+
+  document.getElementById('filterPanel').style.display = 'block';
+  document.getElementById('tablePanel').style.display = 'block';
+  buildPlatformGrid();
+  buildDateList('');
+  render();
+}
+
+// ---- Date filter ----
+function toggleDateDropdown(e){
+  e.stopPropagation();
+  const dd = document.getElementById('dateDropdown');
+  const willShow = dd.style.display === 'none';
+  dd.style.display = willShow ? 'block' : 'none';
+  if(willShow) buildDateList(document.getElementById('dateSearchBox').value);
+}
+function closeDateDropdown(){ document.getElementById('dateDropdown').style.display = 'none'; }
+document.addEventListener('click', (e)=>{
+  const dd = document.getElementById('dateDropdown');
+  if(dd && dd.style.display !== 'none' && !dd.contains(e.target) && e.target.id !== 'dateFilterBtn') dd.style.display = 'none';
+});
+function fmtDateDisplay(dateStr){ const [y,m,d] = dateStr.split('-'); return `${d}-${m}-${y}`; }
+function buildDateList(filterText){
+  if(!merged) return;
+  const list = document.getElementById('dateList');
+  list.innerHTML = '';
+  const ft = (filterText||'').trim().toLowerCase();
+  merged.dates.forEach(date=>{
+    const display = fmtDateDisplay(date);
+    if(ft && !display.toLowerCase().includes(ft) && !date.includes(ft)) return;
+    const checked = selectedDates.size===0 || selectedDates.has(date);
+    const lbl = document.createElement('label');
+    lbl.innerHTML = `<input type="checkbox" ${checked?'checked':''}> ${display}`;
+    lbl.querySelector('input').addEventListener('change', (ev)=>{
+      if(selectedDates.size===0) selectedDates = new Set(merged.dates);
+      if(ev.target.checked) selectedDates.add(date); else selectedDates.delete(date);
+      render(); updateDateFilterBtnState();
+    });
+    list.appendChild(lbl);
+  });
+}
+function selectAllDates(){ selectedDates = new Set(); buildDateList(document.getElementById('dateSearchBox').value); render(); updateDateFilterBtnState(); }
+function clearAllDates(){ selectedDates = new Set(['__none__']); buildDateList(document.getElementById('dateSearchBox').value); render(); updateDateFilterBtnState(); }
+function applyDateRange(){
+  const from = document.getElementById('dateFrom').value;
+  const to = document.getElementById('dateTo').value;
+  if(!from && !to) return;
+  selectedDates = new Set(merged.dates.filter(d=>{ if(from && d < from) return false; if(to && d > to) return false; return true; }));
+  buildDateList(document.getElementById('dateSearchBox').value); render(); updateDateFilterBtnState();
+}
+function updateDateFilterBtnState(){
+  const btn = document.getElementById('dateFilterBtn');
+  const active = selectedDates.size > 0;
+  btn.style.color = active ? '#ffe066' : '#fff';
+  btn.textContent = active ? '▾●' : '▾';
+}
+
+function platformCount(p){ let c = 0; for(const d of merged.dates){ if(merged.data[d] && merged.data[d][p]) c++; } return c; }
+function buildPlatformGrid(){
+  const grid = document.getElementById('platformGrid');
+  grid.innerHTML = '';
+  document.getElementById('platformCountBadge').textContent = `${merged.platforms.length} nền tảng`;
+  merged.platforms.forEach(p=>{
+    const chip = document.createElement('label');
+    chip.className = 'id-chip' + (selected.has(p) ? ' checked' : '');
+    chip.innerHTML = `<input type="checkbox" ${selected.has(p)?'checked':''}> ${p} <span class="cnt">(${platformCount(p)} ngày)</span>`;
+    chip.onclick = (e) => { e.preventDefault(); if(selected.has(p)) selected.delete(p); else selected.add(p); buildPlatformGrid(); render(); };
+    grid.appendChild(chip);
+  });
+}
+function selectAllPlatforms(){ selected = new Set(merged.platforms); buildPlatformGrid(); render(); }
+function clearAllPlatforms(){ selected = new Set(); buildPlatformGrid(); render(); }
+
+function fmtVND(n){ if(!n) return "0 đ"; return Math.round(n).toLocaleString('vi-VN') + " đ"; }
+function fmtNum(n){ if(!n) return ""; return Math.round(n).toLocaleString('vi-VN'); }
+function fmtPct(n){ if(n===null||n===undefined||!isFinite(n)) return ""; return (n*100).toFixed(2)+"%"; }
+
+function rowFor(date){
+  const platformsToUse = selected.size ? [...selected] : merged.platforms;
+  let doanh_so=0, don_chot=0, ads=0, don_tao_moi=0, found=false;
+  const dayData = merged.data[date] || {};
+  platformsToUse.forEach(p=>{
+    const v = dayData[p];
+    if(v){ found=true; doanh_so+=v.doanh_so; don_chot+=v.don_chot; ads+=v.ads; don_tao_moi+=v.don_tao_moi; }
+  });
+  return {date, doanh_so, don_chot, ads, don_tao_moi, found};
+}
+
+function render(){
+  const tbody = document.getElementById('tableBody');
+  tbody.innerHTML = '';
+  const datesToShow = selectedDates.size ? merged.dates.filter(d=>selectedDates.has(d)) : merged.dates;
+  const rows = datesToShow.map(rowFor);
+  const activeRows = rows.filter(r=>r.found);
+
+  if(activeRows.length===0){
+    tbody.innerHTML = `<tr><td colspan="9" class="empty-msg">Không có dữ liệu cho Nền tảng đã chọn.</td></tr>`;
+    return;
+  }
+
+  const tot = activeRows.reduce((a,r)=>({ doanh_so:a.doanh_so+r.doanh_so, don_chot:a.don_chot+r.don_chot, ads:a.ads+r.ads, don_tao_moi:a.don_tao_moi+r.don_tao_moi }), {doanh_so:0,don_chot:0,ads:0,don_tao_moi:0});
+  const totDoanhSoVnd = tot.doanh_so * UNIT_PRICE;
+  const totPctAds = totDoanhSoVnd ? tot.ads/totDoanhSoVnd : null;
+  const totCpa = tot.don_tao_moi ? tot.ads/tot.don_tao_moi : null;
+  const totTyLeChot = tot.don_tao_moi ? tot.don_chot/tot.don_tao_moi : null;
+
+  const trTotal = document.createElement('tr');
+  trTotal.className = 'total-row';
+  trTotal.innerHTML = `
+    <td class="col-date">Tổng</td>
+    <td>${tot.doanh_so ? 'RM'+fmtNum(tot.doanh_so) : ''}</td>
+    <td>${fmtVND(totDoanhSoVnd)}</td>
+    <td>${fmtVND(tot.ads)}</td>
+    <td>${fmtPct(totPctAds)}</td>
+    <td>${totCpa!==null?fmtVND(totCpa):''}</td>
+    <td>${fmtNum(tot.don_tao_moi)}</td>
+    <td>${fmtNum(tot.don_chot)}</td>
+    <td>${fmtPct(totTyLeChot)}</td>
+  `;
+  tbody.appendChild(trTotal);
+
+  activeRows.forEach(r=>{
+    const doanhSoVnd = r.doanh_so * UNIT_PRICE;
+    const pctAds = doanhSoVnd ? r.ads/doanhSoVnd : null;
+    const cpa = r.don_tao_moi ? r.ads/r.don_tao_moi : null;
+    const tyLeChot = r.don_tao_moi ? r.don_chot/r.don_tao_moi : null;
+    const isZero = (r.doanh_so===0 && r.ads===0 && r.don_chot===0 && r.don_tao_moi===0);
+    const tr = document.createElement('tr');
+    if(isZero) tr.className = 'zero-row';
+    const [y,m,d] = r.date.split('-');
+    tr.innerHTML = `
+      <td class="col-date">${d}-${m}-${y}</td>
+      <td>${r.doanh_so ? 'RM'+fmtNum(r.doanh_so) : ''}</td>
+      <td>${fmtVND(doanhSoVnd)}</td>
+      <td>${r.ads? fmtVND(r.ads): ''}</td>
+      <td>${fmtPct(pctAds)}</td>
+      <td>${cpa!==null?fmtVND(cpa):''}</td>
+      <td>${fmtNum(r.don_tao_moi)}</td>
+      <td>${fmtNum(r.don_chot)}</td>
+      <td>${fmtPct(tyLeChot)}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ---- Hệ số quy đổi (chỉnh tay, tự lưu giá trị gần nhất) ----
+(function initUnitPrice(){
+  try{
+    const saved = localStorage.getItem('unitPrice');
+    if(saved && Number(saved) > 0){
+      UNIT_PRICE = Number(saved);
+      document.getElementById('unitPriceInput').value = UNIT_PRICE;
+    }
+  }catch(e){ /* localStorage không khả dụng (vd đang xem trong khung preview) — bỏ qua, dùng mặc định 6359 */ }
+})();
+document.getElementById('unitPriceInput').addEventListener('input', (e)=>{
+  const v = Number(e.target.value);
+  if(v > 0){
+    UNIT_PRICE = v;
+    try{ localStorage.setItem('unitPrice', String(v)); }catch(e){ /* bỏ qua nếu không lưu được */ }
+    if(merged) render();
+  }
+});
+
+// ---- Khởi động ----
+loadAllData();
+setInterval(loadAllData, AUTO_REFRESH_MS);
+</script>
+</body>
+</html>
