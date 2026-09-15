@@ -88,6 +88,17 @@ try {
                 $global:hasChanges = $false
                 $changedFile = $global:lastChangedFile
                 Write-Log "Phat hien file thay doi: $changedFile" "Magenta"
+                
+                # Tu dong tong hop vao database.json tich luy
+                $syncScript = Join-Path $TargetFolder "sync_database.py"
+                if (Test-Path $syncScript) {
+                    Write-Log "Dang tong hop so lieu vao database.json..." "Yellow"
+                    $syncOut = python "$syncScript" "$TargetFolder" 2>&1
+                    foreach ($line in $syncOut) {
+                        Write-Log "  $line" "Gray"
+                    }
+                }
+
                 Write-Log "Dang kiem tra git status..." "Yellow"
                 
                 $status = git status --porcelain
@@ -101,6 +112,9 @@ try {
                 git add .
                 git commit -m "Auto sync data: $timeStr"
                 
+                # Dong bo remote truoc de tranh loi reject
+                git pull --rebase origin main 2>&1 | Out-Null
+
                 $pushOutput = git push origin main 2>&1
                 if ($LASTEXITCODE -eq 0) {
                     Write-Log "[OK] DA DONG BO THANH CONG LEN GITHUB (main)!" "Green"
