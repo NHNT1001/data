@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "last_updated": "2026-09-15 16:35:11",
-=======
-  "last_updated": "2026-09-15 09:29:20",
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
+  "last_updated": "2026-09-15 09:48:20",
   "dates": [
     "2026-07-08",
     "2026-07-09",
@@ -84,269 +80,178 @@
   "data": {
     "2026-09-15": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 3362.0,
         "don_chot": 21,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 5545463.0,
-        "don_tao_moi": 15
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 581.0,
+        "don_chot": 5,
         "ads": 1135668.0,
         "don_tao_moi": 13
       }
     },
     "2026-09-14": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 769.0,
+        "don_chot": 8,
         "ads": 2439191.0,
         "don_tao_moi": 43
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 4975.1,
         "don_chot": 34,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 10708728.0,
-        "don_tao_moi": 32
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-09-13": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 7351.55,
         "don_chot": 46,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 20247966.0,
-        "don_tao_moi": 33
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 274.0,
+        "don_chot": 2,
         "ads": 2087202.0,
         "don_tao_moi": 35
       }
     },
     "2026-09-12": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 741.0,
+        "don_chot": 6,
         "ads": 2147813.0,
         "don_tao_moi": 38
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 3576.55,
         "don_chot": 27,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 13450394.0,
-        "don_tao_moi": 23
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-09-11": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 72.0,
+        "don_chot": 1,
         "ads": 1810241.0,
         "don_tao_moi": 38
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 4596.0,
         "don_chot": 26,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 11841609.0,
-        "don_tao_moi": 22
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-09-10": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 3674.0,
         "don_chot": 23,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 11456914.0,
-        "don_tao_moi": 14
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 199.0,
+        "don_chot": 1,
         "ads": 2280020.0,
         "don_tao_moi": 31
       }
     },
     "2026-09-09": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 5629.0,
         "don_chot": 34,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 13502626.0,
-        "don_tao_moi": 27
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 323.0,
+        "don_chot": 3,
         "ads": 2253388.0,
         "don_tao_moi": 41
       }
     },
     "2026-09-08": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 5343.3,
         "don_chot": 33,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 13599612.0,
-        "don_tao_moi": 27
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 1135.0,
+        "don_chot": 6,
         "ads": 2926172.0,
         "don_tao_moi": 52
       }
     },
     "2026-09-07": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 5533.1,
         "don_chot": 34,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 13976092.0,
-        "don_tao_moi": 30
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 968.0,
+        "don_chot": 8,
         "ads": 4175309.0,
         "don_tao_moi": 88
       }
     },
     "2026-09-06": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 7012.0,
         "don_chot": 41,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 20070489.0,
-        "don_tao_moi": 36
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 804.0,
+        "don_chot": 6,
         "ads": 4947055.0,
         "don_tao_moi": 112
       }
     },
     "2026-09-05": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 6916.85,
         "don_chot": 37,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 13589115.0,
-        "don_tao_moi": 26
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 1232.0,
+        "don_chot": 7,
         "ads": 3925255.0,
         "don_tao_moi": 68
       }
     },
     "2026-09-04": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 5658.1,
         "don_chot": 32,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 11933057.0,
-        "don_tao_moi": 34
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 264.0,
+        "don_chot": 3,
         "ads": 1617057.0,
         "don_tao_moi": 29
       }
     },
     "2026-09-03": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 6509.15,
         "don_chot": 36,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 13488255.0,
-        "don_tao_moi": 28
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Chuyển Đổi Tệp Trung Quốc": {
         "doanh_so": 322.0,
@@ -355,29 +260,22 @@
         "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 542.0,
+        "don_chot": 3,
         "ads": 1846935.0,
         "don_tao_moi": 37
       }
     },
     "2026-09-02": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 3331.0,
         "don_chot": 21,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 12145659.0,
-        "don_tao_moi": 20
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 943.0,
+        "don_chot": 7,
         "ads": 1879710.0,
         "don_tao_moi": 55
       },
@@ -390,17 +288,10 @@
     },
     "2026-09-01": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 6483.0,
         "don_chot": 40,
         "ads": 0.0,
         "don_tao_moi": 0
-=======
-        "doanh_so": 0.0,
-        "don_chot": 0,
-        "ads": 14196180.0,
-        "don_tao_moi": 38
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       },
       "Chuyển Đổi Tệp Trung Quốc": {
         "doanh_so": 370.0,
@@ -409,8 +300,8 @@
         "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 0.0,
-        "don_chot": 0,
+        "doanh_so": 139.0,
+        "don_chot": 1,
         "ads": 2031723.0,
         "don_tao_moi": 54
       }
@@ -609,302 +500,162 @@
     },
     "2026-08-01": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 129.0,
-        "don_chot": 1,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1991776.0,
         "don_tao_moi": 4
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 9629762.0,
         "don_tao_moi": 17
-=======
-        "doanh_so": 4495.1,
-        "don_chot": 25,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-02": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 452.0,
-        "don_chot": 4,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2738042.0,
         "don_tao_moi": 6
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 12515924.0,
         "don_tao_moi": 27
-=======
-        "doanh_so": 5135.15,
-        "don_chot": 27,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-03": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 197.0,
-        "don_chot": 2,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2813300.0,
         "don_tao_moi": 3
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 8790124.0,
         "don_tao_moi": 21
-=======
-        "doanh_so": 4547.0,
-        "don_chot": 27,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-04": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 1117.0,
-        "don_chot": 7,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1822319.0,
         "don_tao_moi": 7
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 9129674.0,
         "don_tao_moi": 24
-=======
-        "doanh_so": 5825.0,
-        "don_chot": 29,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-05": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 1007.0,
-        "don_chot": 8,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2276503.0,
         "don_tao_moi": 5
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 10769097.0,
         "don_tao_moi": 30
-=======
-        "doanh_so": 5886.0,
-        "don_chot": 36,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-06": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 150.0,
-        "don_chot": 2,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2611291.0,
         "don_tao_moi": 3
       },
-<<<<<<< HEAD
       "Shopify": {
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 8782584.0,
         "don_tao_moi": 20
-=======
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 346.0,
-        "don_chot": 3,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Shopify": {
-        "doanh_so": 3890.0,
-        "don_chot": 23,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-07": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 860.0,
-        "don_chot": 7,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2351006.0,
         "don_tao_moi": 9
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 9313236.0,
         "don_tao_moi": 25
-=======
-        "doanh_so": 5005.0,
-        "don_chot": 30,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 656.0,
-        "don_chot": 5,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-08": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 147.0,
-        "don_chot": 2,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2162676.0,
         "don_tao_moi": 4
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 9220156.0,
         "don_tao_moi": 25
-=======
-        "doanh_so": 4942.15,
-        "don_chot": 29,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 622.0,
-        "don_chot": 5,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-09": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 990.0,
-        "don_chot": 6,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 3126847.0,
         "don_tao_moi": 7
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 10928045.0,
         "don_tao_moi": 24
-=======
-        "doanh_so": 6294.0,
-        "don_chot": 29,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 474.0,
-        "don_chot": 4,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-10": {
       "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 219.0,
-        "don_chot": 1,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1748102.0,
         "don_tao_moi": 3
       },
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 8492168.0,
         "don_tao_moi": 21
-=======
-        "doanh_so": 4634.0,
-        "don_chot": 25,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 817.0,
-        "don_chot": 5,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-31": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 16346480.0,
         "don_tao_moi": 45
-=======
-        "doanh_so": 7503.1,
-        "don_chot": 46,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 661.0,
-        "don_chot": 4,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 666.0,
-        "don_chot": 4,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-30": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 15287588.0,
         "don_tao_moi": 49
-=======
-        "doanh_so": 7039.0,
-        "don_chot": 46,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 1337.0,
-        "don_chot": 8,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 397.0,
-        "don_chot": 2,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-29": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 12011221.0,
@@ -917,238 +668,66 @@
         "don_chot": 0,
         "ads": 12525258.0,
         "don_tao_moi": 20
-=======
-        "doanh_so": 5800.9,
-        "don_chot": 36,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 602.0,
-        "don_chot": 4,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 340.0,
-        "don_chot": 2,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      }
-    },
-    "2026-08-28": {
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1004.0,
-        "don_chot": 6,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Shopify": {
-        "doanh_so": 3554.0,
-        "don_chot": 23,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 298.0,
-        "don_chot": 2,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-27": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 10711524.0,
         "don_tao_moi": 33
-=======
-        "doanh_so": 5969.750000000001,
-        "don_chot": 35,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 656.0,
-        "don_chot": 5,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 129.0,
-        "don_chot": 1,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-26": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 10401603.0,
         "don_tao_moi": 26
-=======
-        "doanh_so": 5276.0,
-        "don_chot": 30,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 623.0,
-        "don_chot": 5,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 358.0,
-        "don_chot": 2,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-25": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 14431753.0,
         "don_tao_moi": 43
-=======
-        "doanh_so": 6717.85,
-        "don_chot": 39,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 179.0,
-        "don_chot": 1,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 129.0,
-        "don_chot": 1,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-24": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 11942940.0,
         "don_tao_moi": 17
-=======
-        "doanh_so": 3168.0,
-        "don_chot": 19,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 291.0,
-        "don_chot": 2,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1116.0,
-        "don_chot": 7,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-23": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 14417661.0,
         "don_tao_moi": 25
-=======
-        "doanh_so": 4482.0,
-        "don_chot": 27,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 1381.0,
-        "don_chot": 11,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 652.0,
-        "don_chot": 4,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-22": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 9633465.0,
         "don_tao_moi": 23
-=======
-        "doanh_so": 5907.4,
-        "don_chot": 32,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 502.0,
-        "don_chot": 4,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 280.0,
-        "don_chot": 3,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-21": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 9436324.0,
         "don_tao_moi": 22
-=======
-        "doanh_so": 4868.0,
-        "don_chot": 27,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 666.0,
-        "don_chot": 5,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 220.0,
-        "don_chot": 1,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-20": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 11202465.0,
@@ -1177,249 +756,59 @@
         "don_chot": 0,
         "ads": 9637841.0,
         "don_tao_moi": 27
-=======
-        "doanh_so": 4106.0,
-        "don_chot": 25,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 444.0,
-        "don_chot": 3,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 216.0,
-        "don_chot": 2,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      }
-    },
-    "2026-08-19": {
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 724.0,
-        "don_chot": 5,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Shopify": {
-        "doanh_so": 4825.05,
-        "don_chot": 28,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 214.0,
-        "don_chot": 2,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      }
-    },
-    "2026-08-18": {
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 566.0,
-        "don_chot": 4,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Shopify": {
-        "doanh_so": 6693.0,
-        "don_chot": 35,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 291.0,
-        "don_chot": 4,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      }
-    },
-    "2026-08-17": {
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 316.0,
-        "don_chot": 3,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Shopify": {
-        "doanh_so": 3450.2,
-        "don_chot": 24,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 150.0,
-        "don_chot": 2,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-16": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 11257288.0,
         "don_tao_moi": 36
-=======
-        "doanh_so": 7032.0,
-        "don_chot": 36,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 825.0,
-        "don_chot": 5,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 1078.0,
-        "don_chot": 9,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-15": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 7971621.0,
         "don_tao_moi": 20
-=======
-        "doanh_so": 3168.0,
-        "don_chot": 22,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 577.0,
-        "don_chot": 3,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 676.0,
-        "don_chot": 6,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-14": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 8209415.0,
         "don_tao_moi": 26
-=======
-        "doanh_so": 5413.3,
-        "don_chot": 28,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 380.0,
-        "don_chot": 3,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 75.0,
-        "don_chot": 1,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-13": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 8865255.0,
         "don_tao_moi": 24
-=======
-        "doanh_so": 4164.1,
-        "don_chot": 23,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 542.0,
-        "don_chot": 4,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 416.0,
-        "don_chot": 3,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-12": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 8960852.0,
         "don_tao_moi": 30
-=======
-        "doanh_so": 6526.0,
-        "don_chot": 33,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 487.0,
-        "don_chot": 3,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 257.0,
-        "don_chot": 2,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     },
     "2026-08-11": {
       "Shopify": {
-<<<<<<< HEAD
         "doanh_so": 0.0,
         "don_chot": 0,
         "ads": 8798496.0,
         "don_tao_moi": 16
-=======
-        "doanh_so": 3406.0,
-        "don_chot": 18,
-        "ads": 0.0,
-        "don_tao_moi": 0
-      },
-      "Chuyển Đổi Tệp Trung Quốc": {
-        "doanh_so": 958.0,
-        "don_chot": 7,
-        "ads": 0.0,
-        "don_tao_moi": 0
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
       }
     }
   },
   "stats": {
-<<<<<<< HEAD
     "excluded_google_shopify": 26,
-=======
-    "excluded_google_shopify": 92,
->>>>>>> 1eedca08d13a649e07bbfbb87fb6998938e8e52f
     "unmapped_marketers": []
   }
 }
