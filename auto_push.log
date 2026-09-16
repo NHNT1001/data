@@ -165,3 +165,18 @@
 [16/09/2026 09:25:36]   [OK] Da cap nhat thanh cong database.json! Tong cong 71 ngay lich su.
 [16/09/2026 09:25:36] Dang kiem tra git status...
 [16/09/2026 09:25:36] Dang tu dong Push len GitHub...
+[16/09/2026 09:25:41] [OK] DA DONG BO THANH CONG LEN GITHUB (main)!
+[16/09/2026 09:25:41] --------------------------------------------------------
+[16/09/2026 09:25:42] Phat hien file thay doi: DATA-SHOPIFY-907645362729233.xlsx
+[16/09/2026 09:25:42] Dang tong hop so lieu vao database.json...
+[16/09/2026 09:25:43]   [>] Bat dau dong bo du lieu tai: D:\Antigravity Tai\Github\data
+[16/09/2026 09:25:43]   [+] Da load database cu: 71 ngay lich su.
+[16/09/2026 09:25:43]     - Orders:   orders.xlsx
+[16/09/2026 09:25:43]     - Ads CĐTQ: DATA-CĐ-Tệp-Trung-805265852439209.xlsx
+[16/09/2026 09:25:43]     - Ads MESS: DATA-Mess-WS-tệp-trung-1917455875136727.xlsx
+[16/09/2026 09:25:43]     - Ads SHOP: DATA-SHOPIFY-907645362729233.xlsx
+[16/09/2026 09:25:43]   [i] Parse thanh cong: 574 don hang, 50 ngay trong dot nay.
+[16/09/2026 09:25:43]   [i] Loai 26 don Google khoi Shopify.
+[16/09/2026 09:25:43]   [OK] Da cap nhat thanh cong database.json! Tong cong 71 ngay lich su.
+[16/09/2026 09:25:43] Dang kiem tra git status...
+[16/09/2026 09:25:43] Dang tu dong Push len GitHub...
