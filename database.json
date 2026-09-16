@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16 09:25:43",
+  "last_updated": "2026-09-16 13:29:15",
   "dates": [
     "2026-07-08",
     "2026-07-09",
@@ -81,8 +81,8 @@
   "data": {
     "2026-09-15": {
       "Shopify": {
-        "doanh_so": 4182.0,
-        "don_chot": 27,
+        "doanh_so": 4365.0,
+        "don_chot": 28,
         "ads": 8988229.0,
         "don_tao_moi": 21
       },
@@ -809,14 +809,14 @@
     },
     "2026-09-16": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 273.0,
-        "don_chot": 2,
+        "doanh_so": 559.0,
+        "don_chot": 5,
         "ads": 305017.0,
         "don_tao_moi": 8
       },
       "Shopify": {
-        "doanh_so": 431.55,
-        "don_chot": 3,
+        "doanh_so": 2171.55,
+        "don_chot": 12,
         "ads": 3483581.0,
         "don_tao_moi": 8
       }
