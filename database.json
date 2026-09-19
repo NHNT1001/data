@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18 09:28:23",
+  "last_updated": "2026-09-19 08:43:01",
   "dates": [
     "2026-07-08",
     "2026-07-09",
@@ -52,7 +52,8 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
   ],
   "platforms": [
     "Chuyển Đổi Tệp Trung Quốc",
@@ -64,27 +65,27 @@
       "Shopify": {
         "doanh_so": 2586.0,
         "don_chot": 15,
-        "ads": 2822784.0,
-        "don_tao_moi": 4
+        "ads": 12222734.0,
+        "don_tao_moi": 27
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 815.0,
         "don_chot": 8,
-        "ads": 437912.0,
-        "don_tao_moi": 12
+        "ads": 2276068.0,
+        "don_tao_moi": 37
       }
     },
     "2026-09-17": {
       "Shopify": {
         "doanh_so": 6210.450000000001,
         "don_chot": 38,
-        "ads": 12382903.0,
+        "ads": 12422240.0,
         "don_tao_moi": 37
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 1471.0,
         "don_chot": 10,
-        "ads": 1914357.0,
+        "ads": 1926250.0,
         "don_tao_moi": 39
       }
     },
@@ -92,13 +93,13 @@
       "Shopify": {
         "doanh_so": 7290.55,
         "don_chot": 42,
-        "ads": 12191259.0,
+        "ads": 12192538.0,
         "don_tao_moi": 36
       },
       "Mess/WS Tệp Trung Quốc": {
         "doanh_so": 1028.0,
         "don_chot": 9,
-        "ads": 1829176.0,
+        "ads": 1829230.0,
         "don_tao_moi": 36
       },
       "Chuyển Đổi Tệp Trung Quốc": {
@@ -606,6 +607,20 @@
         "don_chot": 0,
         "ads": 1748102.0,
         "don_tao_moi": 3
+      }
+    },
+    "2026-09-19": {
+      "Mess/WS Tệp Trung Quốc": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 509086.0,
+        "don_tao_moi": 10
+      },
+      "Shopify": {
+        "doanh_so": 0.0,
+        "don_chot": 0,
+        "ads": 3298172.0,
+        "don_tao_moi": 5
       }
     }
   },
