@@ -762,6 +762,7 @@
 [20/09/2026 12:27:01]   [OK] Da cap nhat thanh cong database.json! Tong cong 54 ngay lich su.
 [20/09/2026 12:27:01] Dang kiem tra git status...
 [20/09/2026 12:27:01] Dang tu dong Push len GitHub...
+<<<<<<< HEAD
 [20/09/2026 12:27:26] [X] Loi khi Push: To https://github.com/NHNT1001/data.git  ! [rejected]        main -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/NHNT1001/data.git' hint: Updates were rejected because a pushed branch tip is behind its remote hint: counterpart. If you want to integrate the remote changes, use 'git pull' hint: before pushing again. hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [20/09/2026 12:27:26] --------------------------------------------------------
 [20/09/2026 12:27:51] Phat hien file thay doi: orders.xlsx
@@ -807,3 +808,37 @@
 [20/09/2026 12:28:14]   [OK] Da cap nhat thanh cong database.json! Tong cong 54 ngay lich su.
 [20/09/2026 12:28:14] Dang kiem tra git status...
 [20/09/2026 12:28:14] Dang tu dong Push len GitHub...
+=======
+[20/09/2026 12:27:08] [X] Loi khi Push: To https://github.com/NHNT1001/data.git  ! [rejected]        main -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/NHNT1001/data.git' hint: Updates were rejected because the tip of your current branch is behind hint: its remote counterpart. If you want to integrate the remote changes, hint: use 'git pull' before pushing again. hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[20/09/2026 12:27:08] --------------------------------------------------------
+[20/09/2026 12:27:20] Phat hien file thay doi: orders.xlsx
+[20/09/2026 12:27:20] Dang tong hop so lieu vao database.json...
+[20/09/2026 12:27:21]   [>] Bat dau dong bo du lieu tai: D:\Antigravity Tai\Github\data
+[20/09/2026 12:27:21]   [+] Da load database cu: 54 ngay lich su.
+[20/09/2026 12:27:21]     - Orders:   orders.xlsx
+[20/09/2026 12:27:21]     - Ads CĐTQ: DATA-CĐ-Tệp-Trung-805265852439209.xlsx
+[20/09/2026 12:27:21]     - Ads MESS: DATA-Mess-WS-tệp-trung-1917455875136727.xlsx
+[20/09/2026 12:27:21]     - Ads SHOP: DATA-SHOPIFY-907645362729233.xlsx
+[20/09/2026 12:27:21]   [!] File D:\Antigravity Tai\Github\data\orders.xlsx thieu cot bat buoc: Ngay / Tong tien
+[20/09/2026 12:27:21]   [i] Parse thanh cong: 0 don hang, 54 ngay trong dot nay.
+[20/09/2026 12:27:21]   [i] Loai 0 don Google khoi Shopify.
+[20/09/2026 12:27:21]   [OK] Da cap nhat thanh cong database.json! Tong cong 54 ngay lich su.
+[20/09/2026 12:27:21] Dang kiem tra git status...
+[20/09/2026 12:27:21] Dang tu dong Push len GitHub...
+>>>>>>> c23a16c (Auto sync data: 20/09/2026 12:27:21)
+[20/09/2026 12:28:17] [X] Loi khi Push: To https://github.com/NHNT1001/data.git  ! [rejected]        main -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/NHNT1001/data.git' hint: Updates were rejected because a pushed branch tip is behind its remote hint: counterpart. If you want to integrate the remote changes, use 'git pull' hint: before pushing again. hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[20/09/2026 12:28:17] --------------------------------------------------------
+[20/09/2026 12:28:56] Phat hien file thay doi: orders.xlsx
+[20/09/2026 12:28:56] Dang tong hop so lieu vao database.json...
+[20/09/2026 12:28:57]   [>] Bat dau dong bo du lieu tai: D:\Antigravity Tai\Github\data
+[20/09/2026 12:28:57]   [!] Khong the doc database cu (Expecting property name enclosed in double quotes: line 2 column 1 (char 2)), se tao moi.
+[20/09/2026 12:28:57]     - Orders:   orders.xlsx
+[20/09/2026 12:28:57]     - Ads CĐTQ: DATA-CĐ-Tệp-Trung-805265852439209.xlsx
+[20/09/2026 12:28:57]     - Ads MESS: DATA-Mess-WS-tệp-trung-1917455875136727.xlsx
+[20/09/2026 12:28:57]     - Ads SHOP: DATA-SHOPIFY-907645362729233.xlsx
+[20/09/2026 12:28:57]   [!] File D:\Antigravity Tai\Github\data\orders.xlsx thieu cot bat buoc: Ngay / Tong tien
+[20/09/2026 12:28:57]   [i] Parse thanh cong: 0 don hang, 54 ngay trong dot nay.
+[20/09/2026 12:28:57]   [i] Loai 0 don Google khoi Shopify.
+[20/09/2026 12:28:57]   [OK] Da cap nhat thanh cong database.json! Tong cong 54 ngay lich su.
+[20/09/2026 12:28:57] Dang kiem tra git status...
+[20/09/2026 12:28:57] Dang tu dong Push len GitHub...
