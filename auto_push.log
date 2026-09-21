@@ -988,3 +988,31 @@
 [21/09/2026 08:46:17] Dang tu dong Push len GitHub...
 [21/09/2026 08:46:20] [X] Loi khi Push: To https://github.com/NHNT1001/data.git  ! [rejected]        main -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/NHNT1001/data.git' hint: Updates were rejected because a pushed branch tip is behind its remote hint: counterpart. If you want to integrate the remote changes, use 'git pull' hint: before pushing again. hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [21/09/2026 08:46:20] --------------------------------------------------------
+[21/09/2026 13:40:55] Phat hien file thay doi: orders.xlsx
+[21/09/2026 13:40:55] Dang tong hop so lieu vao database.json...
+[21/09/2026 13:40:58]   [>] Bat dau dong bo du lieu tai: D:\Antigravity Tai\Github\data
+[21/09/2026 13:40:58]   [+] Da load database cu: 55 ngay lich su.
+[21/09/2026 13:40:58]     - Orders:   orders.xlsx
+[21/09/2026 13:40:58]     - Ads CĐTQ: DATA-CĐ-Tệp-Trung-805265852439209.xlsx
+[21/09/2026 13:40:58]     - Ads MESS: DATA-Mess-WS-tệp-trung-1917455875136727.xlsx
+[21/09/2026 13:40:58]     - Ads SHOP: DATA-SHOPIFY-907645362729233.xlsx
+[21/09/2026 13:40:58]   [i] Parse thanh cong: 826 don hang, 55 ngay trong dot nay.
+[21/09/2026 13:40:58]   [i] Loai 31 don Google khoi Shopify.
+[21/09/2026 13:40:58]   [OK] Da cap nhat thanh cong database.json! Tong cong 55 ngay lich su.
+[21/09/2026 13:40:58] Dang kiem tra git status...
+[21/09/2026 13:40:58] Dang tu dong Push len GitHub...
+[21/09/2026 13:41:04] [X] Loi khi Push: To https://github.com/NHNT1001/data.git  ! [rejected]        main -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/NHNT1001/data.git' hint: Updates were rejected because a pushed branch tip is behind its remote hint: counterpart. If you want to integrate the remote changes, use 'git pull' hint: before pushing again. hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[21/09/2026 13:41:04] --------------------------------------------------------
+[21/09/2026 13:41:33] Phat hien file thay doi: orders.xlsx
+[21/09/2026 13:41:33] Dang tong hop so lieu vao database.json...
+[21/09/2026 13:41:33]   [>] Bat dau dong bo du lieu tai: D:\Antigravity Tai\Github\data
+[21/09/2026 13:41:33]   [!] Khong the doc database cu (Expecting property name enclosed in double quotes: line 2 column 1 (char 2)), se tao moi.
+[21/09/2026 13:41:33]     - Orders:   orders.xlsx
+[21/09/2026 13:41:33]     - Ads CĐTQ: DATA-CĐ-Tệp-Trung-805265852439209.xlsx
+[21/09/2026 13:41:33]     - Ads MESS: DATA-Mess-WS-tệp-trung-1917455875136727.xlsx
+[21/09/2026 13:41:33]     - Ads SHOP: DATA-SHOPIFY-907645362729233.xlsx
+[21/09/2026 13:41:33]   [i] Parse thanh cong: 826 don hang, 55 ngay trong dot nay.
+[21/09/2026 13:41:33]   [i] Loai 31 don Google khoi Shopify.
+[21/09/2026 13:41:33]   [OK] Da cap nhat thanh cong database.json! Tong cong 55 ngay lich su.
+[21/09/2026 13:41:33] Dang kiem tra git status...
+[21/09/2026 13:41:33] Dang tu dong Push len GitHub...
