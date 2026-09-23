@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23 01:27:28",
+  "last_updated": "2026-09-23 09:35:56",
   "dates": [
     "2026-07-08",
     "2026-07-09",
@@ -67,8 +67,8 @@
   "data": {
     "2026-09-23": {
       "Shopify": {
-        "doanh_so": 69.0,
-        "don_chot": 1,
+        "doanh_so": 707.0,
+        "don_chot": 6,
         "ads": 3183646.0,
         "don_tao_moi": 7
       },
@@ -87,8 +87,8 @@
         "don_tao_moi": 35
       },
       "Shopify": {
-        "doanh_so": 4691.0,
-        "don_chot": 28,
+        "doanh_so": 5717.0,
+        "don_chot": 32,
         "ads": 11750228.0,
         "don_tao_moi": 29
       }
