@@ -1390,3 +1390,22 @@
 [23/09/2026 15:39:41] Dang tu dong Push len GitHub...
 [23/09/2026 15:39:44] [X] Loi khi Push: To https://github.com/NHNT1001/data.git  ! [rejected]        main -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/NHNT1001/data.git' hint: Updates were rejected because a pushed branch tip is behind its remote hint: counterpart. If you want to integrate the remote changes, use 'git pull' hint: before pushing again. hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [23/09/2026 15:39:44] --------------------------------------------------------
+[23/09/2026 20:40:36] ========================================================
+[23/09/2026 20:40:36] >>> BAT DAU THEO DOI THU MUC: D:\Antigravity Tai\Github\data
+[23/09/2026 20:40:36] >>> He thong san sang! Dang cho thay doi file Excel...
+[24/09/2026 08:08:03] ========================================================
+[24/09/2026 08:08:03] >>> BAT DAU THEO DOI THU MUC: D:\Antigravity Tai\Github\data
+[24/09/2026 08:08:03] >>> He thong san sang! Dang cho thay doi file Excel...
+[24/09/2026 08:42:24] Phat hien file thay doi: DATA-Mess-WS-tệp-trung-1917455875136727.xlsx
+[24/09/2026 08:42:24] Dang tong hop so lieu vao database.json...
+[24/09/2026 08:42:26]   [>] Bat dau dong bo du lieu tai: D:\Antigravity Tai\Github\data
+[24/09/2026 08:42:26]   [+] Da load database cu: 57 ngay lich su.
+[24/09/2026 08:42:26]     - Orders:   orders.xlsx
+[24/09/2026 08:42:26]     - Ads CĐTQ: DATA-CĐ-Tệp-Trung-805265852439209.xlsx
+[24/09/2026 08:42:26]     - Ads MESS: DATA-Mess-WS-tệp-trung-1917455875136727.xlsx
+[24/09/2026 08:42:26]     - Ads SHOP: DATA-SHOPIFY-907645362729233.xlsx
+[24/09/2026 08:42:26]   [i] Parse thanh cong: 940 don hang, 58 ngay trong dot nay.
+[24/09/2026 08:42:26]   [i] Loai 37 don Google khoi Shopify.
+[24/09/2026 08:42:26]   [OK] Da cap nhat thanh cong database.json! Tong cong 58 ngay lich su.
+[24/09/2026 08:42:26] Dang kiem tra git status...
+[24/09/2026 08:42:26] Dang tu dong Push len GitHub...
