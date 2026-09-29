@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29 01:41:39",
+  "last_updated": "2026-09-29 04:50:00",
   "dates": [
     "2026-07-08",
     "2026-07-09",
@@ -87,8 +87,8 @@
     },
     "2026-09-22": {
       "Shopify": {
-        "doanh_so": 6522.0,
-        "don_chot": 37,
+        "doanh_so": 6396.0,
+        "don_chot": 36,
         "ads": 11781196.0,
         "don_tao_moi": 29
       },
@@ -735,23 +735,23 @@
     },
     "2026-09-28": {
       "Shopify": {
-        "doanh_so": 4494.1,
-        "don_chot": 31,
+        "doanh_so": 6270.1,
+        "don_chot": 38,
         "ads": 13587084.0,
         "don_tao_moi": 29
       }
     },
     "2026-09-29": {
       "Shopify": {
-        "doanh_so": 979.4,
-        "don_chot": 6,
+        "doanh_so": 1752.05,
+        "don_chot": 13,
         "ads": 2473234.0,
         "don_tao_moi": 6
       }
     }
   },
   "stats": {
-    "excluded_google_shopify": 55,
+    "excluded_google_shopify": 56,
     "unmapped_marketers": []
   }
 }
