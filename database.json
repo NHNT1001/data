@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01 04:18:40",
+  "last_updated": "2026-10-01 07:15:37",
   "dates": [
     "2026-07-08",
     "2026-07-09",
@@ -75,8 +75,8 @@
   "data": {
     "2026-09-23": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 2369.0,
-        "don_chot": 21,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1401700.0,
         "don_tao_moi": 30
       },
@@ -95,8 +95,8 @@
         "don_tao_moi": 29
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 2359.0,
-        "don_chot": 19,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2104908.0,
         "don_tao_moi": 35
       }
@@ -109,8 +109,8 @@
         "don_tao_moi": 32
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1286.0,
-        "don_chot": 12,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2335312.0,
         "don_tao_moi": 38
       }
@@ -123,8 +123,8 @@
         "don_tao_moi": 29
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1187.0,
-        "don_chot": 12,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2576348.0,
         "don_tao_moi": 57
       }
@@ -137,8 +137,8 @@
         "don_tao_moi": 26
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1049.0,
-        "don_chot": 7,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1572390.0,
         "don_tao_moi": 33
       }
@@ -151,8 +151,8 @@
         "don_tao_moi": 27
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1101.0,
-        "don_chot": 11,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2279195.0,
         "don_tao_moi": 37
       }
@@ -165,8 +165,8 @@
         "don_tao_moi": 37
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1471.0,
-        "don_chot": 10,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1926510.0,
         "don_tao_moi": 39
       }
@@ -179,8 +179,8 @@
         "don_tao_moi": 36
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1028.0,
-        "don_chot": 9,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1829230.0,
         "don_tao_moi": 36
       },
@@ -199,16 +199,16 @@
         "don_tao_moi": 21
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 914.0,
-        "don_chot": 7,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1807117.0,
         "don_tao_moi": 32
       }
     },
     "2026-09-14": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 843.0,
-        "don_chot": 9,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2444026.0,
         "don_tao_moi": 43
       },
@@ -227,16 +227,16 @@
         "don_tao_moi": 33
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 274.0,
-        "don_chot": 2,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2087202.0,
         "don_tao_moi": 35
       }
     },
     "2026-09-12": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 741.0,
-        "don_chot": 6,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2147813.0,
         "don_tao_moi": 38
       },
@@ -249,8 +249,8 @@
     },
     "2026-09-11": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 72.0,
-        "don_chot": 1,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1810241.0,
         "don_tao_moi": 38
       },
@@ -269,8 +269,8 @@
         "don_tao_moi": 14
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 199.0,
-        "don_chot": 1,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2280020.0,
         "don_tao_moi": 31
       }
@@ -283,8 +283,8 @@
         "don_tao_moi": 27
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 323.0,
-        "don_chot": 3,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2253388.0,
         "don_tao_moi": 41
       }
@@ -297,8 +297,8 @@
         "don_tao_moi": 27
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1135.0,
-        "don_chot": 6,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2926172.0,
         "don_tao_moi": 52
       }
@@ -311,8 +311,8 @@
         "don_tao_moi": 30
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 968.0,
-        "don_chot": 8,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 4175309.0,
         "don_tao_moi": 88
       }
@@ -325,8 +325,8 @@
         "don_tao_moi": 36
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 804.0,
-        "don_chot": 6,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 4947055.0,
         "don_tao_moi": 112
       }
@@ -339,8 +339,8 @@
         "don_tao_moi": 26
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 1232.0,
-        "don_chot": 7,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 3925255.0,
         "don_tao_moi": 68
       }
@@ -353,8 +353,8 @@
         "don_tao_moi": 34
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 264.0,
-        "don_chot": 3,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1617057.0,
         "don_tao_moi": 29
       }
@@ -373,8 +373,8 @@
         "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 542.0,
-        "don_chot": 3,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1846935.0,
         "don_tao_moi": 37
       }
@@ -387,8 +387,8 @@
         "don_tao_moi": 20
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 943.0,
-        "don_chot": 7,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1879710.0,
         "don_tao_moi": 55
       },
@@ -413,8 +413,8 @@
         "don_tao_moi": 0
       },
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 139.0,
-        "don_chot": 1,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 2031723.0,
         "don_tao_moi": 54
       }
@@ -693,8 +693,8 @@
     },
     "2026-09-24": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 2105.0,
-        "don_chot": 17,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 1290448.0,
         "don_tao_moi": 34
       },
@@ -707,8 +707,8 @@
     },
     "2026-09-25": {
       "Mess/WS Tệp Trung Quốc": {
-        "doanh_so": 480.0,
-        "don_chot": 5,
+        "doanh_so": 0.0,
+        "don_chot": 0,
         "ads": 470723.0,
         "don_tao_moi": 10
       },
@@ -753,8 +753,8 @@
     },
     "2026-09-30": {
       "Shopify": {
-        "doanh_so": 4550.55,
-        "don_chot": 30,
+        "doanh_so": 4802.55,
+        "don_chot": 32,
         "ads": 14365387.0,
         "don_tao_moi": 28
       }
